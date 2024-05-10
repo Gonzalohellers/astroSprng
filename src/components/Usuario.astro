@@ -1,0 +1,25 @@
+---
+interface Props{
+    id:number;
+    nombre:string;
+    password:string;
+}
+
+const {id, nombre, password}=Astro.props;
+---
+
+<div>
+    <h4>El username es: {nombre} </h4>
+    <h4>La contraseña es: {password} </h4>
+    <h4>la id: {id} </h4>
+</div>
+
+<style>
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+    h4{
+        margin-right: 25px;
+    }
+</style>
